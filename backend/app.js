@@ -57,7 +57,9 @@ app.get("/api/products", (req, res) => {
   res.json(sampleData); // Send the response to the client once
 });
 
+const PORT = process.env.PORT;
+
 //listen to port
-app.listen(process.env.PORT, () => {
+app.listen(PORT, () => {
   console.log(`'API server is running on port ${process.env.PORT}'`);
 });
